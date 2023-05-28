@@ -19,3 +19,5 @@ Informações de atributo
 * bmi: índice de massa corporal
 * smoking_status: "formerly smoked", "never smoked", "smokes" or "Unknown"* ("fumou antigamente", "nunca fumou", "fuma" ou "desconhecido")
 * stroke: 1 se o paciente teve um AVC ou 0 se não *Note: "Unknown" em smoking_status significa que a informação não está disponível para este paciente
+
+Dataset tirado do site Kaggle.com link - https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset?resource=download
