@@ -1,0 +1,1 @@
+Verificar a variável idade que consta valores decimal
