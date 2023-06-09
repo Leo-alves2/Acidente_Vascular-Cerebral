@@ -1,1 +1,41 @@
 Verificar a variável idade que consta valores decimal
+
+Instalar o requirementos - pip install -r requirements.txt
+
+Escrever os requirementos - pip freeze > requirements.txt
+
+
+Trecho removidos
+
+# Visualizar a correlação, por padrão é o método 'pearson'
+
+df_selet.corr()
+__________________________________________
+
+df_corr = df_selet.corr()
+
+
+_____________________________________
+# Visualizar a correlação
+
+plt.figure(figsize= (15, 6))
+matrix = np.triu(df_corr)
+sns.heatmap(df_corr, annot= True, linewidths= 8, mask= matrix, cmap= 'crest')
+plt.show()
+
+________________________________________________________
+from sklearn.preprocessing import LabelEncoder
+
+label_encoder = LabelEncoder()
+
+# Transformando as colunas qualitativas em números
+
+df.gender = label_encoder.fit_transform(df.gender)
+
+df.ever_married = label_encoder.fit_transform(df.ever_married)
+
+df.work_type = label_encoder.fit_transform(df.work_type)
+
+df.Residence_type = label_encoder.fit_transform(df.Residence_type)
+
+df.smoking_status = label_encoder.fit_transform(df.smoking_status)
